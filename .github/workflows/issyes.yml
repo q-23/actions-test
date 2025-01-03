@@ -1,0 +1,9 @@
+name: Output issues
+on: issues
+jobs:
+  output_issues:
+    runs-on: ubuntu-latest
+    name: "Output issues"
+    steps:
+      - name: "Display output"
+        run: echo "${{toJson(github)}}"
